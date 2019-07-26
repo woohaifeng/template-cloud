@@ -7,15 +7,14 @@
         <groupId>com.company</groupId>
         <version>${version}</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>component-eureka</artifactId>
+    <artifactId>service-user</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
@@ -25,15 +24,5 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.company.eureka.EurekaApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
 </project>

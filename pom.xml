@@ -10,6 +10,7 @@
 
     <modules>
         <module>component-eureka</module>
+        <module>service-user</module>
     </modules>
 
     <packaging>pom</packaging>

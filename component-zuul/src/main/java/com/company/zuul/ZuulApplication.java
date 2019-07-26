@@ -1,15 +1,17 @@
-package com.company.service.user;
+package com.company.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class UserServiceApplication {
+@EnableZuulProxy
+public class ZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserServiceApplication.class,args);
+        SpringApplication.run(ZuulApplication.class,args);
     }
 
 }

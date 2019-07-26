@@ -11,6 +11,8 @@
     <modules>
         <module>component-eureka</module>
         <module>service-user</module>
+        <module>api-user</module>
+        <module>component-zuul</module>
     </modules>
 
     <packaging>pom</packaging>

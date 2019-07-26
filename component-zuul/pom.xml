@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-user</artifactId>
+    <artifactId>component-zuul</artifactId>
 
     <dependencies>
 
@@ -21,6 +21,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
         <dependency>
@@ -36,11 +41,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.company.service.user.ServiceUserApplication</mainClass>
+                    <mainClass>com.company.zuul.ZuulApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>

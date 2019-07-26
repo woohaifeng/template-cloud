@@ -1,0 +1,18 @@
+server:
+  port: 7001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    instance-id: api-user-7001
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: api-user
+
+feign:
+  hystrix:
+    enabled: true

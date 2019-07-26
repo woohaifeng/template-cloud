@@ -5,11 +5,11 @@
     <parent>
         <artifactId>template</artifactId>
         <groupId>com.company</groupId>
-        <version>${version}</version>
+        <version>0.0.1-DEV</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-user</artifactId>
+    <artifactId>api-user</artifactId>
 
     <dependencies>
 
@@ -24,10 +24,26 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -36,7 +52,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.company.service.user.ServiceUserApplication</mainClass>
+                    <mainClass>com.company.api.user.ApiUserApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

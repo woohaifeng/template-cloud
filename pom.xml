@@ -13,6 +13,7 @@
         <module>service-user</module>
         <module>api-user</module>
         <module>component-zuul</module>
+        <module>component-config</module>
     </modules>
 
     <packaging>pom</packaging>

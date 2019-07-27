@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/woohaifeng/template-cloud.git
+          search-paths: repository
+          username: 326734854@qq.com
+          password: 098614.Github
+
+#cloud-cofing如果要修改端口，必须使用bootstrap.yml
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka

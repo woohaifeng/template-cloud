@@ -1,6 +1,7 @@
 spring:
   application:
     name: config
+  #验证方式：http://localhost:8888/${ymlName}(上传的yml文件的名称)/master(label)
   cloud:
     config:
       label: master
@@ -11,7 +12,7 @@ spring:
           username: 326734854@qq.com
           password: 098614.Github
 
-#cloud-cofing如果要修改端口，必须使用bootstrap.yml
+#cloud-cofing端口默认必须是8888，如果要修改端口，必须使用bootstrap.yml
 server:
   port: 8888
 

@@ -1,20 +1,20 @@
 server:
-  port: 7001
+  port: 9411
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka
   instance:
-    instance-id: api-user-7001
+    instance-id: zipkin-9411
     prefer-ip-address: true
 
 spring:
   application:
-    name: api-user
-  zipkin:
-    base-url: http://localhost:9411
+    name: zipkin
 
-feign:
-  hystrix:
-    enabled: true
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

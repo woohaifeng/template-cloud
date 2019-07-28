@@ -15,6 +15,7 @@
         <module>component-zuul</module>
         <module>component-config</module>
         <module>component-zipkin</module>
+        <module>component-admin</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -24,6 +25,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
         <zipkin.version>2.10.1</zipkin.version>
+        <spring-boot-admin.version>2.1.5</spring-boot-admin.version>
     </properties>
 
     <parent>
@@ -56,6 +58,11 @@
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -9,9 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>component-zipkin</artifactId>
+    <artifactId>component-admin</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -23,31 +24,21 @@
         </dependency>
 
         <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-server</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.logging.log4j</groupId>
-                    <artifactId>log4j-slf4j-impl</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-autoconfigure-ui</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
@@ -56,11 +47,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.company.zipkin.ZipkinApplication</mainClass>
+                    <mainClass>com.company.admin.AdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>

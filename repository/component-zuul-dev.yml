@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://localhost:9001/eureka
     register-with-eureka: false
   instance:
-    instance-id: zuul-8888
+    instance-id: zuul-10001
     prefer-ip-address: true
 
 zuul:

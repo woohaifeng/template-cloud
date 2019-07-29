@@ -18,6 +18,7 @@
         <module>component-admin</module>
         <module>service-redis</module>
         <module>common-service</module>
+        <module>common</module>
     </modules>
 
     <packaging>pom</packaging>

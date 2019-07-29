@@ -1,0 +1,16 @@
+server:
+  port: 8802
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    instance-id: service-redis-8802
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: service-redis
+  zipkin:
+    base-url: http://localhost:9411

@@ -16,6 +16,8 @@
         <module>component-config</module>
         <module>component-zipkin</module>
         <module>component-admin</module>
+        <module>service-redis</module>
+        <module>common-service</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -63,6 +65,12 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring-boot-admin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.company</groupId>
+                <artifactId>common-service</artifactId>
+                <version>${version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

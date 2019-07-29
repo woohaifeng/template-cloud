@@ -1,29 +1,29 @@
-server:
-  port: 10001
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9001/eureka
-    register-with-eureka: false
-  instance:
-    instance-id: zuul-8888
-    prefer-ip-address: true
-
-zuul:
-  routes:
-    api-user:
-      path: /user/**
-      serviceId: api-user
-#  host:
-#    connect-timeout-millis: 15000
-#    socket-timeout-millis: 60000
-#    ribbon:
-#      ReadTimeout: 10000
-#      ConnectTimeout: 10000
-
-spring:
-  application:
-    name: zuul
-  zipkin:
-    base-url: http://localhost:9411
+#server:
+#  port: 10001
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9001/eureka
+#    register-with-eureka: false
+#  instance:
+#    instance-id: zuul-8888
+#    prefer-ip-address: true
+#
+#zuul:
+#  routes:
+#    api-user:
+#      path: /user/**
+#      serviceId: api-user
+##  host:
+##    connect-timeout-millis: 15000
+##    socket-timeout-millis: 60000
+##    ribbon:
+##      ReadTimeout: 10000
+##      ConnectTimeout: 10000
+#
+#spring:
+#  application:
+#    name: zuul
+#  zipkin:
+#    base-url: http://localhost:9411

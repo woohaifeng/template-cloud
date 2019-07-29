@@ -1,21 +1,21 @@
-server:
-  port: 9001
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    #如果部署eureka集群，需要将下面两个配置去掉
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    instance:
-      instance-id: erueka-9411
-      prefer-ip-address: true
-
-spring:
-  application:
-    name: eureka
-  zipkin:
-    base-url: http://localhost:9411
+#server:
+#  port: 9001
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    #如果部署eureka集群，需要将下面两个配置去掉
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    instance:
+#      instance-id: erueka-9411
+#      prefer-ip-address: true
+#
+#spring:
+#  application:
+#    name: eureka
+#  zipkin:
+#    base-url: http://localhost:9411

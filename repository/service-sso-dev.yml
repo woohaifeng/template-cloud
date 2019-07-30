@@ -1,0 +1,16 @@
+server:
+  port: 8803
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    instance-id: service-sso-8803
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: service-sso
+  zipkin:
+    base-url: http://localhost:9411

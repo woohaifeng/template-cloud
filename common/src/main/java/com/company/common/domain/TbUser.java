@@ -1,23 +1,24 @@
 package com.company.common.domain;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
-@Table(name = "template..user")
-public class User {
+@Table(name = "tb_user")
+public class TbUser implements Serializable {
     /**
      * 主键
      */
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /**
      * 登陆名
      */
-    private String logincode;
+    @Column(name = "login_code")
+    private String loginCode;
 
     /**
      * 登陆密码
@@ -52,19 +53,19 @@ public class User {
     /**
      * 获取登陆名
      *
-     * @return logincode - 登陆名
+     * @return login_code - 登陆名
      */
-    public String getLogincode() {
-        return logincode;
+    public String getLoginCode() {
+        return loginCode;
     }
 
     /**
      * 设置登陆名
      *
-     * @param logincode 登陆名
+     * @param loginCode 登陆名
      */
-    public void setLogincode(String logincode) {
-        this.logincode = logincode;
+    public void setLoginCode(String loginCode) {
+        this.loginCode = loginCode;
     }
 
     /**

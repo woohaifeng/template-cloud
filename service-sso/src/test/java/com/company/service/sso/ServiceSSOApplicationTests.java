@@ -17,7 +17,7 @@ public class ServiceSSOApplicationTests {
     private LoginService loginService;
     @Test
     public void test() {
-        TbUser tbUser = loginService.login("andy","123");
+        TbUser tbUser = loginService.login("andy1","123");
         System.out.println("================="+tbUser.getName());
     }
 }

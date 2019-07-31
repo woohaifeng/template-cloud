@@ -4,9 +4,10 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Table(name = "tb_user")
-public class TbUser {
+public class TbUser implements Serializable {
     /**
      * 主键
      */

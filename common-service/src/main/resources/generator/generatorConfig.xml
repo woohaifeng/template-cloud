@@ -40,7 +40,7 @@
         <!--<table catalog="itoken-service-admin" tableName="tb_sys_user">-->
             <!--<generatedKey column="id" sqlStatement="Mysql" identity="false"/>-->
         <!--</table>-->
-        <table catalog="template" tableName="user">
+        <table tableName="tb_user">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 

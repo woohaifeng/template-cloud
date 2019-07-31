@@ -1,9 +1,9 @@
 package com.company.service.sso.service;
 
-import com.company.common.domain.User;
+import com.company.common.domain.TbUser;
 
 public interface LoginService {
 
-    public User login(String loginCode,String plainPassword);
+    public TbUser login(String loginCode, String plainPassword);
 
 }

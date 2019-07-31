@@ -1,6 +1,6 @@
 package com.company.service.sso;
 
-import com.company.common.domain.User;
+import com.company.common.domain.TbUser;
 import com.company.service.sso.service.LoginService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,8 +17,7 @@ public class ServiceSSOApplicationTests {
     private LoginService loginService;
     @Test
     public void test() {
-        User user = loginService.login("andy","123");
-        System.out.println(user.toString());
-
+        TbUser tbUser = loginService.login("andy","123");
+        System.out.println("================="+tbUser.getName());
     }
 }

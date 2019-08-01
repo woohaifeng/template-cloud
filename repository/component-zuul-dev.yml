@@ -15,6 +15,9 @@ zuul:
     api-user:
       path: /user/**
       serviceId: api-user
+    api-sso:
+      path: /sso/**
+      serviceId: service-sso
 #  host:
 #    connect-timeout-millis: 15000
 #    socket-timeout-millis: 60000

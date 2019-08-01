@@ -34,9 +34,10 @@ public class LoginController {
             RedirectAttributes redirectAttributes) {
         TbUser tbUser = loginService.login(loginCode, plainPassword);
         if (tbUser == null) {
-            redirectAttributes.addFlashAttribute("msg","账号密码错误！");
+            redirectAttributes.addFlashAttribute("msg","账号或密码错误！");
         } else {
             String token = UUID.randomUUID().toString();
+            redisService.put("token",token,60*60*24);
             if(StringUtils.isNotBlank(url)) {
                 return "redirect:/"+url;
             }
